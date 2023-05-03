@@ -18,6 +18,8 @@ Front End Improvements:
 
 
 Back End Improvements:
-* Implementation of Goerli Testnet
+* Implementation of Goerli Testnet 
+  * can be found in truffle-config.js
 * Implementation of Sepolia Testnet
+  * can be found in truffle-config.js
 
