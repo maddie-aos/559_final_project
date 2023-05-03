@@ -13,6 +13,11 @@ module.exports = {
         gas: 4465030,
         gasPrice: 10000000000,
       },
+      sepolia: {
+        provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://sepolia.infura.io/v3/", process.env.INFURA_API_KEY),
+        network_id: '11155111',
+        gas: 4465030
+      }
     },
     contracts_directory: './src/contracts/',
     contracts_build_directory: './src/build/',
