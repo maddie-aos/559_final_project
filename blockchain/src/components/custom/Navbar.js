@@ -14,7 +14,7 @@ class Navbar extends Component {
     }
     render(){
 
-        if(this.state.location === "/" || this.state.location === "/choose"  || this.state.location === "/vote"  || this.state.location === "/login"){
+        if(this.state.location === "/" /*|| this.state.location === "/choose"  || this.state.location === "/vote"  || this.state.location === "/login"*/){
             return ( 
                 <nav className="nav-wrapper black darken-2">
                     <div className="container">
