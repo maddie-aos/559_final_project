@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import './navbar.css'
 
 class Login extends Component {
 
@@ -46,9 +47,7 @@ class Login extends Component {
                     <label htmlFor="name">Username</label><br></br>
                     <input type="password" id="password" name="password" onChange={this.handleInputChange} required/>
                     <label htmlFor="name">Password</label><br></br><br></br>
-                    <button className="btn blue darken-2" type="submit" name="action">Submit
-                        <i className="material-icons right">send</i>
-                    </button>
+                    <button className="button" type="submit" name="action">Submit</button>
                 </form>
             </div>      
         )

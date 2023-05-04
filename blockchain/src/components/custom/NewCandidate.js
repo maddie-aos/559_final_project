@@ -87,9 +87,7 @@ class NewCandidate extends Component{
                     <label htmlFor="name">Candidate Name</label><br></br>
                     <input type="text" id="candidate_details" name="candidate_details" onChange={this.handleInputChange} required/>
                     <label htmlFor="name">Candidate details</label><br></br><br></br>
-                    <button className="btn blue darken-2" type="submit" name="action">Submit
-                        <i className="material-icons right">send</i>
-                    </button>
+                    <button className="button" type="submit" name="action">Submit</button>
                 </form>
             </div>            
         )

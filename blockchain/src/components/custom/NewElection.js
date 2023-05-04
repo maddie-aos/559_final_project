@@ -46,9 +46,7 @@ class NewElection extends Component {
                         <label htmlFor="name">Election Organizer</label><br></br>
                         <input type="password" id="election_password" name="election_password" onChange={this.handleInputChange} required/>
                         <label htmlFor="name">Election Password</label><br></br><br></br>
-                        <button className="btn blue darken-2" type="submit" name="action">Submit
-                            <i className="material-icons right">send</i>
-                        </button>
+                        <button className="button" type="submit" name="action">Submit</button>
                     </form>
             </div>
         )
