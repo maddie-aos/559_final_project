@@ -15,4 +15,7 @@
     width: 50px;
     height: auto;
   }
-
+  .secondary-content {
+    /*background-color: #FF7900;  red */
+    color: #FF7900;
+  }
