@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
+import tuffy from './tuffy.png'
+import './navbar.css';
+
+
 
 class Navbar extends Component {
     state = {
@@ -14,31 +18,34 @@ class Navbar extends Component {
     }
     render(){
 
-        if(this.state.location === "/" /*|| this.state.location === "/choose"  || this.state.location === "/vote"  || this.state.location === "/login"*/){
-            return ( 
-                <nav className="nav-wrapper black darken-2">
+        if(/*this.state.location === "/" ||*/ this.state.location === "/choose"  || this.state.location === "/vote"  || this.state.location === "/login"){
+           return ( 
+                 <nav className="Navbar navbar-expand-lg navbar-light">
                     <div className="container">
-                        <a className="brand-logo">
-                            E-Election
+                    <a className="brand-logo">
+                            CSUF E-Election
+                            <img src={tuffy} alt="Tuffy"className="navbar-logo"/>
                         </a>
                     </div>
                 </nav>
-            )
+            );
         }else{
             return(
-                <nav className="nav-wrapper black darken-2">
+                <nav className="Navbar navbar-expand-lg navbar-light">
                     <div className="container">
                         <a className="brand-logo">
-                            E-Election
+                        CSUF E-Election
                         </a>
+                        
                         <ul className="right">
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/newelection">New Election</NavLink></li>
                             <li><NavLink to="/elections">Elections</NavLink></li>
+                            <img src={tuffy} alt="Tuffy" className="navbar-logo"/>
                         </ul>
                     </div>
                 </nav>
-            )
+            );
         }
 
         

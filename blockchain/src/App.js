@@ -21,7 +21,7 @@ class App extends Component {
         <BrowserRouter>
             <div className="App">
                 <NavBar getVal={this.getVal}/>
-                <Route exact path="/" component={Home} />
+                <Route exact path= "/" component={Home}/>
                 <Route exact path="/newelection" component={NewElection} />
                 <Route exact path="/elections" component={ElectionData} />
                 <Route exact path="/candidates/:id" component={NewCandidate} />
