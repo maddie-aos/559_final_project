@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const conn = mongoose.connect('mongodb://127.0.0.1:27017/elections',{
+const conn = mongoose.connect('mongodb+srv://madelinesmith:Eg7GGyEXXgVr7InU@evoting.tazyufz.mongodb.net/',{
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
