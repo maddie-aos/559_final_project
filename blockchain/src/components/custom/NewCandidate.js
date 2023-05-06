@@ -56,7 +56,10 @@ class NewCandidate extends Component{
         .once('receipt', (receipt) => {
             console.log(receipt);
           this.setState({ loading: false })
-          window.location.assign("/");
+          // window.location.assign("/");
+          if (confirm(`Are you sure you want to add ${this.state.candidate_name} as a new candidate?`)) {
+            window.location.assign("/");
+          }  
         })
     }
     
