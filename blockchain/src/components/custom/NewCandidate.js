@@ -46,22 +46,21 @@ class NewCandidate extends Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.addCandidates();
+        if (window.confirm(`Are you sure you want to add ${this.state.candidate_name} as a new candidate?`)) {
+            this.addCandidates();
+        }
     }
-    
     addCandidates() {
         console.log(this.state);
         this.setState({ loading: true })
         this.state.election.methods.addCandidate(this.state.candidate_name, this.state.candidate_details, this.state.id).send({ from: this.state.account })
         .once('receipt', (receipt) => {
             console.log(receipt);
-          this.setState({ loading: false })
-          // window.location.assign("/");
-          if (confirm(`Are you sure you want to add ${this.state.candidate_name} as a new candidate?`)) {
+            this.setState({ loading: false })
             window.location.assign("/");
-          }  
         })
     }
+
     
     constructor(props) {
         super(props)
