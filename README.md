@@ -11,6 +11,7 @@ Github Repo we based our project off of : https://github.com/sherwyn11/E-Voting-
 
 
 Front End Improvements:
+
 * 
 *  
 * 
@@ -22,5 +23,5 @@ Back End Improvements:
 * Implementation of Sepolia Testnet
   * can be found in truffle-config.js
 * Add second check of adding new candidnate through a confirmation window before connecting to metamask
- * can be found in NewCandidate.js
+  * can be found in NewCandidate.js
 
