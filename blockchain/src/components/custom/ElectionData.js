@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './navbar.css'
 
 class ElectionData extends Component {
 
@@ -54,15 +55,13 @@ class ElectionData extends Component {
         const electionList = this.state.final.map(election => {
             return (
                 <div className="contact" key={election.election_id}>
-                    <li className="collection-item avatar">
-                        <i className="material-icons circle blue darken-2">ballot</i>
-                        <p><b>{election.election_name}</b></p>
+                  <li className="collection-item avatar"> 
+                        <h4>{election.election_name}</h4>
                         <br></br>
-                        <Link to={"/candidates/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="waves-effect waves-light btn yellow darken-3">Add candidate</button></Link>
-                        &nbsp;&nbsp;&nbsp;
-                        <Link to={"/voteCount/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="waves-effect waves-light btn red darken-3">View vote Count</button></Link>
-                        
-                    </li>
+                        <Link to={"/candidates/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">Add candidate</button></Link>
+                        <Link to={"/voteCount/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">View vote Count</button></Link>
+                    </li>   
+                    
                 </div>
             )
         }) 

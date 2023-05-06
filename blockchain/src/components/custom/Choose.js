@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './navbar.css'
 
 class Choose extends Component {
 
@@ -53,8 +54,7 @@ class Choose extends Component {
             return (
                 <div className="contact" key={election.election_id}>
                     <li className="collection-item avatar">
-                        <i className="material-icons circle blue darken-2">ballot</i>
-                        <Link to={"/vote/" + election.election_id} className="title" onClick={this.handleInputChange}>{election.election_name}</Link>
+                    <a href=""><Link to={"/vote/" + election.election_id} className="button" onClick={this.handleInputChange}>{election.election_name}</Link></a>
                     </li>
                 </div>
             )
