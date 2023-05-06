@@ -4,6 +4,7 @@ import Election from '../../build/Election.json'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 
+
 class VoteCount extends Component {
 
     async componentWillMount() {
