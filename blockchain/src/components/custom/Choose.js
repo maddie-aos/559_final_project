@@ -49,27 +49,33 @@ class Choose extends Component {
     };
 
 
-    render(){
-        const electionList = this.state.final.map(election => {
-            return (
-                <div className="contact" key={election.election_id}>
-                    <li className="collection-item avatar">
-                    <a href=""><Link to={"/vote/" + election.election_id} className="button" onClick={this.handleInputChange}>{election.election_name}</Link></a>
-                    </li>
+        render(){
+            const electionList = this.state.final.map(election => {
+                return (
+                    <div className="contact" key={election.election_id}>
+                        <li className="collection-item avatar">
+                            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                            <h4>{election.election_name}</h4>
+                            <a href="" style={{alignSelf: 'right'}}><Link to={"/vote/" + election.election_id} className="button" onClick={this.handleInputChange}>Go Vote!</Link></a>
+                            </div>
+                        </li>
+                    </div>
+                )
+            }) 
+            return(
+                <div className="container">
+                    <ul className="collection">
+                        <li className="collection-item avatar">
+                            <h3>Elections</h3>
+                        </li>
+                            {electionList}
+                    </ul>
                 </div>
             )
-        }) 
-        return(
-            <div className="container">
-                <ul className="collection">
-                    <li className="collection-item avatar">
-                        <h3>Elections</h3>
-                    </li>
-                        {electionList}
-                </ul>
-            </div>
-        )
+        }
     }
-}
 
 export default Choose;
+
+
+

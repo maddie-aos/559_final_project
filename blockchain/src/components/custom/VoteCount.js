@@ -96,7 +96,7 @@ class VoteCount extends Component {
                     <li className="collection-item avatar">
                         <h4>{candidates.name}</h4>
                         <p>{candidates.details}</p>
-                        <p className="secondary-content"><b>{candidates.voteCount}</b></p>
+                        <h5 className="secondary-content"><b>{candidates.voteCount}</b></h5>
                     </li>
                 </div>
             )
@@ -104,8 +104,10 @@ class VoteCount extends Component {
         return(
             <div className="container">
                 <ul className="collection">
-                        <h3 className="title">Candidates</h3>
+                <li className="collection-item avatar">
+                        <h3>Candidates</h3>
                         {electionList}
+                        </li>
                 </ul>
             </div>
         )

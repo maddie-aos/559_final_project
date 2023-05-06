@@ -56,12 +56,14 @@ class ElectionData extends Component {
             return (
                 <div className="contact" key={election.election_id}>
                   <li className="collection-item avatar"> 
-                        <h4>{election.election_name}</h4>
-                        <br></br>
-                        <Link to={"/candidates/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">Add candidate</button></Link>
-                        <Link to={"/voteCount/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">View vote Count</button></Link>
+                  <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}> 
+                  <h4>{election.election_name}</h4>
+                  <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                  <Link to={"/candidates/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">Add candidate</button></Link>
+                    <Link to={"/voteCount/" + election.election_id} className="title" onClick={this.handleInputChange}><button id={election.election_id} className="button">View vote Count</button></Link>
+                  </div>
+                  </div>
                     </li>   
-                    
                 </div>
             )
         }) 
