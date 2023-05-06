@@ -11,7 +11,8 @@ Github Repo we based our project off of : https://github.com/sherwyn11/E-Voting-
 
 
 Front End Improvements:
-* 
+* Confirmation for adding a new candidate
+  * can be found in NewCandidate.js
 * 
 *  
 * 
