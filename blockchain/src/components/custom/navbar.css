@@ -1,19 +1,25 @@
 .Navbar {
     background-color: #00244E; 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
   }
-/*  .Navbar img {
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: auto;
-    align-items: right;
-  }*/
+  .Navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .Navbar li {
+    margin-right: 20px;
+  }
+  
+  .Navbar .navbar-logo {
+    margin-left: auto;
+  }
   .navbar-logo {
     margin-right: auto;
     width: 50px;
-    height: auto;
+    height: 50px;
   }
   .secondary-content {
     /*background-color: #FF7900;  red */
