@@ -50,24 +50,43 @@ class Vote extends Component {
         }
     }
 
-    handleInputChange = (e) => {
-        console.log(e.target.id)
-        this.setState({
-            selectedId: e.target.id,
-        })
-        this.vote(e.target.id);
+    handleInputChange = async (e) => {
+        const candidateId = e.target.id;
+        this.setState({ selectedId: candidateId });
+        await this.vote(candidateId);
+        if (window.confirm(`Are you sure you want to vote for this candidate?`)) {
+            if (window.confirm(`Did you find the voting process easy and intuitive? Click OK for thumbs up, Cancel for thumbs down.`)) {
+                this.setState({ thumbsUp: this.state.thumbsUp + 1 });
+            } else {
+                this.setState({ thumbsDown: this.state.thumbsDown + 1 });
+            }
+            window.location.assign("/");
+        }
     }
+    
 
 
     vote(id) {
         console.log(this.state.selectedId)
         this.setState({ loading: true })
         this.state.election.methods.vote(id).send({ from: this.state.account })
-        .once('receipt', (receipt) => {
-            this.setState({ loading: false })
-            window.location.assign("/");
+        .on('confirmation', (confirmationNumber, receipt) => {
+            if (confirmationNumber === 1) {
+                if (window.confirm(`Are you sure you want to vote for this candidate?`)) {
+                    if (window.confirm(`Did you find the voting process easy and intuitive? Click OK for thumbs up, Cancel for thumbs down.`)) {
+                        this.setState({ thumbsUp: this.state.thumbsUp + 1 });
+                    } else {
+                        this.setState({ thumbsDown: this.state.thumbsDown + 1 });
+                    }
+                    window.location.assign("/");
+                }
+            }
+            else if (confirmationNumber === 2) {
+                this.setState({ loading: false })
+            }
         })
     }
+    
 
     componentDidMount(){
         let id = this.props.match.params.id;
@@ -85,7 +104,9 @@ class Vote extends Component {
             candCount: 0,
             candidates: [],
             loading: true,
-            selectedId: null
+            selectedId: null,
+            thumbsUp: 0,
+            thumbsDown: 0
         }
     }
 
@@ -94,7 +115,7 @@ class Vote extends Component {
             return (
                 <div className="contact" key={candidates.id}>
                     <li className="collection-item avatar">
-                      
+                        
                         <h4>{candidates.name}</h4>
                         <p>{candidates.details}</p>
                         <a href="" className="secondary-content"><button id={candidates.id} onClick={this.handleInputChange} className="button">Vote</button></a>
