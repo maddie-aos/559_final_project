@@ -12,7 +12,7 @@ Github Repo we based our project off of : https://github.com/sherwyn11/E-Voting-
 
 Front End Improvements:
 
-* 
+* Changed UI to match school colors and make it a school-specific site. 
 *  
 * 
 
@@ -24,4 +24,5 @@ Back End Improvements:
   * can be found in truffle-config.js
 * Add second check of adding new candidnate through a confirmation window before connecting to metamask
   * can be found in NewCandidate.js
-
+* Add second check of voting for a candidnate through a confirmation window before connecting to metamask
+  * can be found in Vote.js
