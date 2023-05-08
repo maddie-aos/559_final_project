@@ -105,7 +105,7 @@ How to start the project:
    Summary
    =======
    > Total deployments:   2
-   > Final cost:          0.0199768 ETH```
+   > Final cost:          0.0199768 ETH
    
 9.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
    8.1. In the server folder first, run the following command to start 
