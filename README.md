@@ -52,17 +52,15 @@ How to start the project:
    ```truffle migrate```
 
    If the deployment was successful, you will get an output similar to this:
-   ```bash
+   ```bash 
    Starting migrations...
-======================
-> Network name:    'development'
-> Network id:      5777
-> Block gas limit: 6721975 (0x6691b7)
-
-
-1_initial_migration.js
-======================
-
+   ======================
+   > Network name:    'development'
+   > Network id:      5777
+   > Block gas limit: 6721975 (0x6691b7)
+   
+   1_initial_migration.js
+   ======================
    Replacing 'Migrations'
    ----------------------
    > transaction hash:    0x5f6370cbaa52c83b7bfe4be1ade220960ec2cc6399b70dc58c0c688cfade5338
@@ -81,10 +79,9 @@ How to start the project:
    > Saving artifacts
    -------------------------------------
    > Total cost:          0.00403254 ETH
-
-
-2_initial_migration.js
-======================
+   
+   2_initial_migration.js
+   ======================
 
    Replacing 'Election'
    --------------------
@@ -104,12 +101,11 @@ How to start the project:
    > Saving artifacts
    -------------------------------------
    > Total cost:          0.01594426 ETH
-
-Summary
-=======
-> Total deployments:   2
-> Final cost:          0.0199768 ETH
-```
+   
+   Summary
+   =======
+   > Total deployments:   2
+   > Final cost:          0.0199768 ETH```
    
 9.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
    8.1. In the server folder first, run the following command to start 
