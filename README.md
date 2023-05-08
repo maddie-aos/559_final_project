@@ -144,6 +144,7 @@ Note: This assumes you already have a metamask account, and that you have the Ga
     [nodemon] starting `node src/app.js`
     Server is up on port 8000
     ```
+
     
     10.2 In the blockchain folder next, run the following command to start the React app: 
     
