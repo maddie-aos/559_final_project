@@ -128,9 +128,9 @@ Note: This assumes you already have a metamask account, and that you have the Ga
 
 10.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
     
-    10.1. In the server folder first, run the following command to start the server:
-    
-    ```npm run dev```
+     10.1   In the server folder first, run the following command to start the server:
+
+     ```npm run dev```
     
     This should have the following output:
     
@@ -145,18 +145,18 @@ Note: This assumes you already have a metamask account, and that you have the Ga
     Server is up on port 8000
     ```
 
+     10.2 In the blockchain folder next, run the following command to start the React app: 
 
-    10.2 In the blockchain folder next, run the following command to start the React app: 
-    
-    ```npm start```
+      ```npm start```
     
     This should give you the following output: 
     
     ```bash
     Starting the development server...
     ```
-    
-    10.3 Now you can use the application to create an election, or vote for a candidate. 
+     
+     10.3  Now you can use the application to create an election, or vote for a candidate. 
+
 
 11. To stop the application simply run the following command in both running terminals: 
     
