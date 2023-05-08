@@ -27,6 +27,7 @@ Back End Improvements:
 * Add a prompt asking if voter found the system easy 
   * Can be found in Vote.js
 
+----
 **How to start the project:**
 
 Note: This assumes you already have a metamask account, and that you have the Ganache test network added to your Metamask account, if you do not please create a metamask account first using the following [link](https://metamask.io/), and follow these [instructions](https://docs.metamask.io/wallet/get-started/run-development-network/) to connect the Ganache Test Net to your metamask account. 
