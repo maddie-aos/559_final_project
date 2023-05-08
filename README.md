@@ -7,7 +7,7 @@
 |Vincent Trung| vincenttrung@csu.fullerton.edu| 885887547|
 |Krishna| krishna17897@csu.fullerton.edu| 886198043|
 
-Github Repo we based our project off of : https://github.com/sherwyn11/E-Voting-App
+[Github Repo](https://github.com/sherwyn11/E-Voting-App) we based our project off of is embedded in this line.  
 
 
 Front End Improvements:
