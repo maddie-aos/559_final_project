@@ -1,4 +1,4 @@
-#CPSC 559 Final Project
+# CPSC 559 Final Project
 
 |Team Member | Email | CWID |
 |-------|------|--------|
