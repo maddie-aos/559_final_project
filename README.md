@@ -118,13 +118,13 @@ Note: This assumes you already have a metamask account, and that you have the Ga
 
 9.  In your browser, switch to your Metamask Network to the Ganache Network and add the account created by the Ganache workspace. 
     
-   9.1 In the Ganache app, the first account in your workspace is the account connected to the project.
-
-   9.2 Hit the key icon on the far right end of the account and copy the private key value. 
-
-   9.3 In your metamask wallet, add the wallet information by importing a new wallet and pasting the private key value. 
-
-   9.4 Once that is done, hit submit and your wallet should be connected to the Ganache Testnet. 
+    9.1 In the Ganache app, the first account in your workspace is the account connected to the project.
+    
+    9.2 Hit the key icon on the far right end of the account and copy the private key value. 
+    
+    9.3 In your metamask wallet, add the wallet information by importing a new wallet and pasting the private key value. 
+    
+    9.4 Once that is done, hit submit and your wallet should be connected to the Ganache Testnet. 
 
 10.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
     
