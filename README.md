@@ -132,28 +132,28 @@ Note: This assumes you already have a metamask account, and that you have the Ga
 
      ```npm run dev```
     
-    This should have the following output:
+      This should have the following output:
     
-    ```bash
-    > server@1.0.0 dev
-    > nodemon src/app.js
-    [nodemon] 2.0.3
-    [nodemon] to restart at any time, enter `rs`
-    [nodemon] watching path(s): *.*
-    [nodemon] watching extensions: js,mjs,json
-    [nodemon] starting `node src/app.js`
-    Server is up on port 8000
-    ```
+      ```bash
+      > server@1.0.0 dev
+      > nodemon src/app.js
+      [nodemon] 2.0.3
+      [nodemon] to restart at any time, enter `rs`
+      [nodemon] watching path(s): *.*
+      [nodemon] watching extensions: js,mjs,json
+      [nodemon] starting `node src/app.js`
+      Server is up on port 8000
+      ```
 
      10.2 In the blockchain folder next, run the following command to start the React app: 
 
       ```npm start```
+      
+      This should give you the following output: 
     
-    This should give you the following output: 
-    
-    ```bash
-    Starting the development server...
-    ```
+      ```bash
+      Starting the development server...
+      ```
      
      10.3  Now you can use the application to create an election, or vote for a candidate. 
 
