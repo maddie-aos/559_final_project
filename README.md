@@ -27,15 +27,22 @@ Back End Improvements:
 * Add a prompt asking if voter found the system easy 
   * Can be found in Vote.js
 
-How to start the project: 
+# How to start the project: 
+
+Note: This assumes you already have a metamask account, and that you have the Ganache test network added to your Metamask account, if you do not please create a metamask account first using the following [link](https://metamask.io/), and follow these [instructions](https://docs.metamask.io/wallet/get-started/run-development-network/) to connect the Ganache Test Net to your metamask account. 
+
 1. Clone the this github repository using the following command: ```gh repo clone maddie-aos/559_final_project```
    
-2. If you dont have truffle and ganache, please install them first using the following commands in a new terminal window, if you do please skip to step x: 
+2. If you dont have truffle and ganache, please install them first using the following commands in a new terminal window, if you do please skip to step 3: 
+
    To download truffle: ```npm install -g truffle```
+
    To download [Ganache](https://trufflesuite.com/ganache/) please click Ganache and follow instructions from the link. 
 
 3. Once those two dependencies have been installed start a New Workspace by clicking 'New Workspace".
+   
    3.1. This will take you directly to the settings screen where you can set the name for your workspace. 
+
    3.2. Then in the 'Truffle Projects' box add the truffle-config.js file found in the 'blockchain' folder.
 
 4. Hit save workspace, then restart the workspace. 
@@ -106,6 +113,50 @@ How to start the project:
    =======
    > Total deployments:   2
    > Final cost:          0.0199768 ETH
-   
-9.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
-   8.1. In the server folder first, run the following command to start 
+   ```
+
+9.  In your browser, switch to your Metamask Network to the Ganache Network and add the account created by the Ganache workspace. 
+    
+   9.1 In the Ganache app, the first account in your workspace is the account connected to the project.
+
+   9.2 Hit the key icon on the far right end of the account and copy the private key value. 
+
+   9.3 In your metamask wallet, add the wallet information by importing a new wallet and pasting the private key value. 
+
+   9.4 Once that is done, hit submit and your wallet should be connected to the Ganache Testnet. 
+
+10.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
+    
+   10.1. In the server folder first, run the following command to start the server:
+
+   ```npm run dev```
+
+   This should have the following output:
+
+   ```bash
+   > server@1.0.0 dev
+   > nodemon src/app.js
+   [nodemon] 2.0.3
+   [nodemon] to restart at any time, enter `rs`
+   [nodemon] watching path(s): *.*
+   [nodemon] watching extensions: js,mjs,json
+   [nodemon] starting `node src/app.js`
+   Server is up on port 8000
+   ```
+
+   10.2 In the blockchain folder next, run the following command to start the React app: 
+
+   ```npm start```
+
+   This should give you the following output: 
+   ```bash
+   Starting the development server...
+   ```
+
+   10.3 Now you can use the application to create an election, or vote for a candidate. 
+
+11. To stop the application simply run the following command in both running terminals: 
+    
+    ```Ctrl + C```
+
+
