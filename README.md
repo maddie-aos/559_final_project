@@ -128,7 +128,7 @@ Note: This assumes you already have a metamask account, and that you have the Ga
 
 10.  Once that is complete, open two terminals and navigate to the blockchain folder in one, then the server folder in another. 
     
-    10.1. In the server folder first, run the following command to start the server:
+  10.1. In the server folder first, run the following command to start the server:
     
     ```npm run dev```
     
@@ -145,7 +145,7 @@ Note: This assumes you already have a metamask account, and that you have the Ga
     Server is up on port 8000
     ```
 
-    
+
     10.2 In the blockchain folder next, run the following command to start the React app: 
     
     ```npm start```
