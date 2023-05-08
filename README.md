@@ -115,6 +115,7 @@ Note: This assumes you already have a metamask account, and that you have the Ga
    > Final cost:          0.0199768 ETH
    ```
 
+
 9.  In your browser, switch to your Metamask Network to the Ganache Network and add the account created by the Ganache workspace. 
     
    9.1 In the Ganache app, the first account in your workspace is the account connected to the project.
