@@ -51,9 +51,10 @@ Note: This assumes you already have a metamask account, and that you have the Ga
    
 6. Delete all extra package-lock.json files that are present in both the blockchain and server folders. 
    
-7. Then run" ```npm install``` in both the blockchain and server folders. 
+7. Then run: ```npm install``` in both the blockchain and server folders. 
    
 8. In a new terminal window navigate to the blockchain folder and deploy your contracts to the Ganache testnet using the following commands:
+   
    ```truffle compile```
 
    ```truffle migrate```
